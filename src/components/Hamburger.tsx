@@ -4,7 +4,7 @@ import "./Hamburger.css";
 const Hamburger = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleClick = () => {
+  const handleClick = (): void => {
     setIsOpen(!isOpen);
   };
 

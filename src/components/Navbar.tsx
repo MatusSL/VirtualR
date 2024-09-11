@@ -32,17 +32,20 @@ const Navbar = () => {
             })}
           </ul>
           <div className="hidden lg:flex justify-center items-center space-x-12">
-            <button type="button" className="py-2 px-3 border rounded-md">
+            <button
+              type="button"
+              className="py-2 px-3 border rounded-md hover:text-neutral-800 hover:bg-neutral-200 transform all duration-200"
+            >
               Sign In
             </button>
             <button
               type="button"
-              className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
+              className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md hover:text-neutral-800 transform duration-200"
             >
               Create an account
             </button>
           </div>
-          <div className="lg:hidden md:flex flex-col justify-end">
+          <div className="lg:hidden md:flex flex-col">
             <DropDown />
           </div>
         </div>

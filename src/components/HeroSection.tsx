@@ -19,11 +19,14 @@ const HeroSection = () => {
       <div className="flex justify-center my-10">
         <button
           type="button"
-          className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md"
+          className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md hover:text-neutral-800 transform duration-200"
         >
           Start for free
         </button>
-        <button type="button" className="py-3 px-4 mx-3 rounded-md border">
+        <button
+          type="button"
+          className="py-3 px-4 mx-3 rounded-md border hover:text-neutral-800 hover:bg-neutral-200 transform all duration-200"
+        >
           Documentation
         </button>
       </div>

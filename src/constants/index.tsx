@@ -53,10 +53,14 @@ interface Link {
 
 // Declarations for arrays of each type
 export const navItems: NavItem[] = [
-  { label: "Features", href: "#" },
+  { label: "Testimonials", href: "#" },
   { label: "Workflow", href: "#" },
   { label: "Pricing", href: "#" },
-  { label: "Testimonials", href: "#" },
+  { label: "Features", href: "#" },
+];
+export const navItemsDrop: NavItem[] = [
+  { label: "Pricing", href: "#" },
+  { label: "Features", href: "#" },
 ];
 
 export const testimonials: Testimonial[] = [

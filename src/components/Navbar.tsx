@@ -1,11 +1,6 @@
 import logo from "../assets/logo.png";
-import { navItems } from "../constants";
 import DropDown from "./DropDown";
-
-type NavItem = {
-  href: string;
-  label: string;
-};
+import NavMenu from "./NavMenu";
 
 const Navbar = () => {
   return (
@@ -16,21 +11,10 @@ const Navbar = () => {
             <img className="h-10 w-10 mr-2" src={logo} alt="logo" />
             <span className="text-3xl tracking-tight">VirtualR</span>
           </div>
+          <div className="hidden lg:flex">
+            <NavMenu />
+          </div>
 
-          <ul className="hidden lg:flex ml-14 space-x-12 text-lg">
-            {navItems.map((item: NavItem, index: number) => {
-              const { href, label } = item;
-
-              return (
-                <li
-                  key={index}
-                  className="hover:text-orange-500 transform all ease-in duration-200"
-                >
-                  <a href={href}>{label}</a>
-                </li>
-              );
-            })}
-          </ul>
           <div className="hidden lg:flex justify-center items-center space-x-12">
             <button
               type="button"

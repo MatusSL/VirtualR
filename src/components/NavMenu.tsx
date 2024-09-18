@@ -67,7 +67,10 @@ const NavMenu = () => {
         <ul className="flex">
           {addedLinks.map((item, index) => {
             return (
-              <li key={index} className="mr-6">
+              <li
+                key={index}
+                className="mr-1 hover:bg-neutral-600/50 px-3 py-2 rounded-md"
+              >
                 <a href="##" className="text-[16px]">
                   {item}
                 </a>

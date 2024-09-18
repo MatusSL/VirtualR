@@ -69,7 +69,7 @@ const NavMenu = () => {
             return (
               <li
                 key={index}
-                className="mr-1 hover:bg-neutral-600/50 px-3 py-2 rounded-md"
+                className="mr-1 hover:bg-neutral-600/50 px-3 py-2 rounded-md tracking-wide"
               >
                 <a href="##" className="text-[16px]">
                   {item}
